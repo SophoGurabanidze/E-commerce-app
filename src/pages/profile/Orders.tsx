@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { useGetPurchasesQuery, useDeletePurchaseMutation } from '../../features/api/purchaseApi';
+import Loader from '../../components/Loader';
 
 const Orders = () => {
   const { data: orders = [], isLoading } = useGetPurchasesQuery();
@@ -9,7 +10,7 @@ const Orders = () => {
   // Track which order is open
   const [openOrderId, setOpenOrderId] = useState<string | null>(null);
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <Loader type='ripple'/>;
 
   if (!orders.length) return <div>You have no orders yet.</div>;
 

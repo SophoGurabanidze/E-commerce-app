@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Loader from '../components/Loader';
 import CategorySlider from '../components/CategorySlider';
 import Baner1 from '../components/Baner1';
 import ProductSlider from '../components/ProductSlider';
@@ -8,20 +9,14 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // ⏳ Simulate page loading or replace with real logic
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // 2 seconds for demo
-
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
   if (isLoading) {
-    return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="water-drop"></div>
-      </div>
-    );
+    return <Loader type="ripple" />;  
   }
 
   return (

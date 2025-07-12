@@ -4,6 +4,7 @@ import { useGetProductsQuery, useGetCategoriesQuery } from '../features/product/
 import ProductCard from '../compoundComponents/productCard';
 import ProductFilters from '../components/ProductFilters';
 import { Filter } from 'lucide-react';
+import Loader from '../components/Loader';
 
 const Products = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -112,7 +113,9 @@ const Products = () => {
           </div>
 
           {isLoading ? (
-            <p>Loading...</p>
+          
+           <Loader type="ripple" />
+          
           ) : (
             <>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

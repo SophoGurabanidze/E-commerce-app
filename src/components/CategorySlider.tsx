@@ -3,6 +3,7 @@ import { useGetCategoriesQuery } from '../features/product/productApi';
 import MenuDropdown from '../compoundComponents/dropdownMenu';
 import { ChevronRight, ChevronLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Loader from '../components/Loader';
 
 const CategorySlider: React.FC = () => {
   const sliderRef = useRef<HTMLDivElement | null>(null);
@@ -36,9 +37,9 @@ const CategorySlider: React.FC = () => {
     return () => el.removeEventListener('scroll', onScroll);
   }, [categories]);
 
-  if (isLoading) return   <div className="flex items-center justify-center py-10">
-  <div className="water-drop"></div>
-</div>
+  if (isLoading) {
+    return <Loader type="ripple" />;  
+  }
   if (isError) return <div className="text-center py-10 text-red-500">Failed to load categories.</div>;
 
   return (

@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.search
+{
+  border: none;
+    line-height: 48px;
+    flex: 1 1 0%;
+    padding: 5px 20px 5px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.bg-purpleBlue
+{
+  background-color: #7a96ea;
+
+}
+
+.text-purpleBlue
+{
+  color:#7a96ea;
+}
+
+.bg-transparent
+{
+  background-color: transparent;
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE + Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+
+.water-drop {
+  width: 30px;
+  height: 30px;
+  background: #516fd1;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  animation: dropBounce 1s ;
+}
+
+@keyframes dropBounce {
+  0% {
+    transform: translateY(0) scaleY(1);
+  }
+  50% {
+    transform: translateY(20px) scaleY(0.8);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}

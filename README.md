@@ -1,11 +1,10 @@
 # E-commerce App
 
-This is a full-featured e-commerce application built as my final assignment for the Digital Institute.  
-I achieved a perfect score of 100 out of 100 on this project.
+This is a full-featured e-commerce application built as my final assignment for the Digital Institute, for which I earned a score of 100 out of 100.
 
 ## 🚀 Project Overview
 
-This simplified single-user version of an e-commerce app allows users to:
+This simplified single-role version of an e-commerce app allows users to:
 - Browse products by category
 - Filter and search products
 - Add products to cart and wishlist

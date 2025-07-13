@@ -7,6 +7,7 @@ import ProductCard from '../compoundComponents/productCard';
 import { Truck, RotateCw, Heart } from 'lucide-react';
 import { useState } from 'react';
 import toast from 'react-hot-toast';
+import Loader from '../components/Loader';
 
 
 import {
@@ -137,7 +138,7 @@ const toggleWishlist = async () => {
     ?.sort(() => 0.5 - Math.random())
     ?.slice(0, 4);
 
-  if (isProductLoading) return <div>Loading...</div>;
+  if (isProductLoading) return <Loader type='ripple'/>;
   if (isProductError || !product) return <div>Product not found.</div>;
 
   return (

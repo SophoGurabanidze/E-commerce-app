@@ -205,7 +205,7 @@ const toggleWishlist = async () => {
             />
           )}
 
-          <div className="mt-6 flex flex-col gap-4 w-1/2">
+          <div className="mt-6 flex flex-col gap-4  md:w-1/2">
             <div className="border rounded-lg p-4 flex items-center gap-3">
               <Truck className="w-6 h-6 text-gray-600" />
               <div>

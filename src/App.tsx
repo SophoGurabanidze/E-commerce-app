@@ -10,6 +10,7 @@ import { getProductsLoader } from './features/products/productsLoaders';
 import Loader from './components/Loader';
 // Lazy-loaded pages
 const Home = lazy(() => import('./pages/Home'));
+// import Home from './pages/Home';
 // const Products = lazy(() => import('./pages/Products'));
 import Products from './pages/Products'
 const SingleProduct = lazy(() => import('./pages/SingleProduct'));

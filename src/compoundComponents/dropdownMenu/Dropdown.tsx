@@ -15,7 +15,7 @@ const Dropdown: React.FC<MenuDropdownProps> = ({ children, position = 'below' })
   const toggle = () => setIsOpen(!isOpen);
   const close = () => setIsOpen(false);
 
-  // Example position class, adjust as you need:
+ 
   const positionClass = position === 'below' ? 'dropdown-below' : 'dropdown-next';
 
   useEffect(() => {

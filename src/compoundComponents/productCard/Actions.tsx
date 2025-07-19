@@ -143,7 +143,7 @@ const Actions: React.FC<ActionsProps> = ({ productId, productImage }) => {
   className='  w-[85%] md:w-auto 
   bg-[#7a96ea] md:bg-white 
   text-white md:text-gray-700 
-  text-sm px-3 py-1 rounded-full 
+  text-xs px-3 py-1 rounded-full 
   flex items-center justify-center gap-1 
   hover:opacity-80 md:hover:bg-purpleBlue md:hover:text-blue-300'
 >
@@ -151,7 +151,7 @@ const Actions: React.FC<ActionsProps> = ({ productId, productImage }) => {
     className="text-white md:text-gray-700 md:hover:text-purpleBlue"
     size={16}
   />
-  <span className="md:hidden">Add to Cart</span>
+  <span className="md:hidden">Add </span>
 </button>
       </div>
 

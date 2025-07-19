@@ -27,7 +27,7 @@ const Content: FC<ContentProps> = ({ children }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex flex-col" onClick={close}>
-      <div className="md:h-1/2 h-3/4 bg-white pt-16 overflow-auto flex flex-col items-center">
+      <div className="md:h-1/2 h-4/5 bg-white pt-16 overflow-auto flex flex-col items-center">
         <div className="relative w-[95%] max-w-screen-xl" onClick={(e) => e.stopPropagation()}>
           <div className="flex justify-between items-center mb-6 px-2 md:px-0">
             <h2 className="text-xl font-bold">All Categories</h2>

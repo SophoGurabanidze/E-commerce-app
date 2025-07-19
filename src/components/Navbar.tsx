@@ -53,14 +53,15 @@ const Navbar: React.FC = () => {
     <>
       {/* Top Navbar */}
       <nav className="w-full bg-purpleBlue shadow-sm">
-        <div className="max-w-[1440px] mx-auto flex items-center justify-center px-4 py-3 gap-4">
+        <div className="lg:px-[157px] max-w-[1440px] mx-auto flex items-center justify-center px-4 py-3 gap-4">
+       
           {/* Logo */}
           <Link to="/" className="text-black text-3xl font-extrabold tracking-wider whitespace-nowrap">
             Store:
           </Link>
 
           {/* ✅ Search with auto-complete */}
-          <div className="flex-grow max-w-[600px] mx-4">
+          <div className="  flex-grow  mx-4">
             <NavbarSearch />
           </div>
 

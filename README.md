@@ -11,6 +11,8 @@ This simplified single-role version of an e-commerce app allows users to:
 - Place orders
 - Access an admin panel for managing categories, products, and user info
 
+Authentication is implemented to protect routes like the admin panel, cart, wishlist, settings and orders pages.
+
 ## 🛠️ Technologies Used
 
 - **Frontend**: React, TypeScript, Vite

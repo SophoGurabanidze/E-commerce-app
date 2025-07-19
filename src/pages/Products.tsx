@@ -67,7 +67,7 @@ const Products = () => {
   }, [data?.products, filters.productName]);
 
   return (
-    <div className="p-4">
+    <div className="w-full max-w-[1440px] mx-auto px-4 py-5 ">
       <div   className={`flex flex-col md:flex-row gap-6 ${
     showFilters ? 'justify-start' : 'justify-center'
   }`}>
@@ -90,7 +90,7 @@ const Products = () => {
     showFilters ? 'w-full' : 'max-w-[1200px] mx-auto'
   }`}
 >
-          <div className="flex justify-between items-start mb-4 md:me-[50px]">
+          <div className="flex justify-between items-start mb-4 md:mx-[50px]">
             <button
               className="flex items-center gap-2 px-3 py-2 border rounded text-sm hover:bg-gray-100"
               onClick={() => setShowFilters((prev) => !prev)}
@@ -118,7 +118,7 @@ const Products = () => {
           
           ) : (
             <>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              <div className="md:ml-[50px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {filteredProducts.map((product) => (
                   <ProductCard
                     key={product.id}

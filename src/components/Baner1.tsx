@@ -24,7 +24,7 @@ const Baner1: React.FC = () => {
         </p>
         <button
           onClick={handleShopClick}
-          className="text-[12px] sm:text-[14px] lg:text-[20px] bg-[#525B88] mt-2 rounded-lg text-white px-10 py-1 md:py-2 md:px-20"
+          className="text-[12px] sm:text-[14px] lg:text-[20px] bg-[#525B88] mt-2 rounded-lg text-white px-12 py-1 md:py-2 md:px-20"
         >
           Shop
         </button>

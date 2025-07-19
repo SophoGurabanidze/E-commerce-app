@@ -59,7 +59,7 @@ const ProductSlider: React.FC<ProductSliderProps> = ({
   return (
     <div className="relative mt-10">
       <div className="flex items-center justify-between mb-2">
-        <div className="font-bold text-[24px]">{title}</div>
+        <div className="font-bold md:text-[24px] text-[18px]">{title}</div>
         <a
           href={`/products?categoryName=${encodeURIComponent(categoryName)}`}
           className="flex items-center gap-1 font-bold text-black hover:underline text-[16px]"

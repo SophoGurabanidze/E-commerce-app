@@ -65,7 +65,7 @@ const NavbarSearch: React.FC = () => {
             setQuery(e.target.value);
             setShowDropdown(true);
           }}
-          className="w-full border border-gray-300 rounded-full pl-10 pr-10 py-2 bg-white text-sm focus:outline-none"
+          className="rounded-lg  w-full border border-gray-300 rounded-full pl-10 pr-10 py-2 bg-white text-sm focus:outline-none"
         />
 
         {/* Clear X */}
